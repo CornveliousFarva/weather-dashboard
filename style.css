@@ -2,4 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    font-family: cursive;
+}
+
+.header-div{
+    text-align: center;
+    box-sizing: content-box;
+    background-color: wheat;
+    color: teal;
+}
+
+.main{
+    width: 750px;
+    padding: 10px;
+    border-style:solid;
+}
+
+.city-container{
+    text-align: center;
+    border-style: solid;
+    border: red;
+}
+
+.first, .second, .third, .fourth, .fifth{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    display: inline-table
 }

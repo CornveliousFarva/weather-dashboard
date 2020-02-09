@@ -9,45 +9,50 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>Weather Dashboard</header>
-    <p>An easy-to-use weather dashboard</p>
-    <!--Main Container-->
-    <div class="main">
-        <!--Container with search bar and some of the biggest metropolitan areas of the US-->
-        <div class="input">
-          <input type="text" placeholder="Enter the city" class="input_text">
-          <input type="submit" value="Submit" class="submit">
-          <ul>
-            <li>Atlanta</li>
-            <li>Birmingham</li>
-            <li>Chicago</li>
-            <li>Des Moines</li>
-            <li>Houston</li>
-            <li>Las Vegas</li>
-            <li>Portland, Oregon</li>
-            <li>San Diego</li>
-          </ul>
+    <header class="header-div">
+      <h1>Weather Dashboard</h1>
+      <p>An easy-to-use weather dashboard</p>
+    </header>
+      <!--Main Container-->
+      <div class="main">
+          <!--Container with search bar and some of the biggest metropolitan areas of the US-->
+          <div class="input" id=col-lg-2>
+            <input type="text" placeholder="Enter the city" class="input_text">
+            <input type="submit" value="Submit" class="submit">
+            <div class="previousCities">
+              <b>City Search History</b>
+              <br />
+              <div id="lastCities"></div>
+          </div>
+          <div class="city-container" id=col-lg-10>
+            <h2>Current Weather</h2>
+            <div class="city">City:</div>
+            <div class="temp">Temperature:</div>
+            <div class="wind">Wind:</div>
+            <div class="humidity">Humidity:</div>
+            <div class="uvIndex">UV Index</div>
+          </div>
         </div>
-      </div>
-        <!-- Container that shows current weather information after data is entered -->
-        <div class="city-container">
-          <div class="city"></div>
-          <div class="temp"></div>
-          <div class="wind"></div>
-          <div class="humidity"></div>
-          <div class="uvIndex"></div>
+      <!--Container with a five-day forecast-->
+        <div class="row">
+          <div class="col-2"></div>
+            <div class="col-10">
+               <h3 class="fiveDayForecast">Five-Day Forecast:</h3>
+            <div class="first">1</div>
+            <div class="second">2</div>
+            <div class="third">3</div>
+            <div class="fourth">4</div>
+            <div class="fifth">5</div>
+          </div>
         </div>
         <!--Container that shows 5-day forecast for the city entered-->
         <div class="flex-container">
-            <h2>Five-Day Forecast:</h2>
-            <div class="1">1</div>
-            <div class="2">2</div>
-            <div class="3">3</div>
-            <div class="4">4</div>
-            <div class="5">5</div>
+           
           </div>
     </div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./script.js"></script>
 </html>
