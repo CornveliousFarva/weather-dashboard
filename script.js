@@ -10,7 +10,7 @@ $(document).ready(function(){
       if(city !=""){
         //Ajax Call for the city
   $.ajax({
-  url: 'https://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=99a5f1438770e3a5652c5488ec5cbfd4',
+  url: url = "api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api id here}",
   type: "GET",
   dataType: "jsonp",
   success: function (data) {
